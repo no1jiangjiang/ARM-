@@ -1,0 +1,14 @@
+Dependencies for Project 'LED', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
+F (.\main.c)(0x63429C86)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I D:\mdk5\pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include -I D:\mdk5\pack\ARM\CMSIS\5.7.0\Device\_Template_Vendor\Vendor\Device\Include-I.\RTE\_Target_1-ID:\mdk5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\mdk5\pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DSTM32F10x_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (stm32f10x.h)(0x53BA0D60)
+I (.\RTE\_Target_1\RTE_Components.h)(0x63419BAB)
+I (D:\mdk5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (D:\mdk5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (D:\mdk5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\mdk5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\mdk5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (system_stm32f10x.h)(0x4F1E2E3C)
+F (.\startup_stm32f10x_md.s)(0x5EC77696)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_Target_1-ID:\mdk5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\mdk5\pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (.\stm32f10x.h)(0x53BA0D60)()
+F (.\system_stm32f10x.h)(0x4F1E2E3C)()
