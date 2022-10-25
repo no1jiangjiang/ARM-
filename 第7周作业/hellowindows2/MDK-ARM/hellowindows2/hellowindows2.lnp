@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"hellowindows2\startup_stm32f103xb.o"
+"hellowindows2\main.o"
+"hellowindows2\gpio.o"
+"hellowindows2\usart.o"
+"hellowindows2\stm32f1xx_it.o"
+"hellowindows2\stm32f1xx_hal_msp.o"
+"hellowindows2\stm32f1xx_hal_gpio_ex.o"
+"hellowindows2\stm32f1xx_hal_tim.o"
+"hellowindows2\stm32f1xx_hal_tim_ex.o"
+"hellowindows2\stm32f1xx_hal_uart.o"
+"hellowindows2\stm32f1xx_hal.o"
+"hellowindows2\stm32f1xx_hal_rcc.o"
+"hellowindows2\stm32f1xx_hal_rcc_ex.o"
+"hellowindows2\stm32f1xx_hal_gpio.o"
+"hellowindows2\stm32f1xx_hal_dma.o"
+"hellowindows2\stm32f1xx_hal_cortex.o"
+"hellowindows2\stm32f1xx_hal_pwr.o"
+"hellowindows2\stm32f1xx_hal_flash.o"
+"hellowindows2\stm32f1xx_hal_flash_ex.o"
+"hellowindows2\stm32f1xx_hal_exti.o"
+"hellowindows2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "hellowindows2\hellowindows2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hellowindows2.map" -o hellowindows2\hellowindows2.axf

@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: test ½­½­, test, LIC=TIVNB-2LD64-QD1KD-8F3ZQ-YISFN-RL5AH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  D:\mdk5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\STM32CubMX\hellowindows\MDK-ARM\hellowindows.uvprojx
+Project File Date:  10/25/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\mdk5\ARM\ARMCC\Bin'
+Build target 'hellowindows'
+compiling main.c...
+../Core/Src/main.c(86): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+  	if(USART_GetFlagStatus(USART1, USART_IT_RXNE) != RESET)
+../Core/Src/main.c(86): error:  #20: identifier "USART_IT_RXNE" is undefined
+  	if(USART_GetFlagStatus(USART1, USART_IT_RXNE) != RESET)
+../Core/Src/main.c(89): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+  		temp = USART_ReceiveData(USART1);
+../Core/Src/main.c(162): warning:  #9-D: nested comment is not allowed
+      /* USER CODE BEGIN 3 */
+../Core/Src/main.c(172): warning:  #223-D: function "USART_SendData" declared implicitly
+  				USART_SendData(USART1, USART_RX_BUF[i]);
+../Core/Src/main.c(174): warning:  #223-D: function "USART_GetFlagStatus" declared implicitly
+  				while(USART_GetFlagStatus(USART1, USART_FLAG_TC)!=SET);
+../Core/Src/main.c(174): error:  #20: identifier "USART_FLAG_TC" is undefined
+  				while(USART_GetFlagStatus(USART1, USART_FLAG_TC)!=SET);
+../Core/Src/main.c(194): warning:  #223-D: function "USART_SendString" declared implicitly
+  			USART_SendString(USART1, "hello windows!\r\n");
+../Core/Src/main.c(195): warning:  #223-D: function "delay_ms" declared implicitly
+  			delay_ms(800);
+../Core/Src/main.c(234): warning:  #9-D: nested comment is not allowed
+  /**
+../Core/Src/main.c: 8 warnings, 2 errors
+"hellowindows\hellowindows.axf" - 2 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.1.0.pack
+                Keil.STM32F1xx_DFP.2.1.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_hellowindows
+  D:\mdk5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\mdk5\pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
